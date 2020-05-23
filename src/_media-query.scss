@@ -1,0 +1,22 @@
+
+$smallMobileWidth: 360;
+$mobileWidth: 980;
+$desktopWidth: 1441;
+
+@mixin small {
+  @media (max-width: $smallMobileWidth+px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobileWidth+px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktopWidth+px) {
+    @content;
+  }
+}
