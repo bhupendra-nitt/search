@@ -1,0 +1,39 @@
+@import '../../media-query';
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  color: #007A7C;
+  margin: 8px;
+  background-color: #f9f9f9;
+  display: inline-block;
+  width: 30%;
+
+  @include mobile {
+    width: 80%;
+    margin: 24px 24px 0 24px;
+  }
+
+  &__title {
+    font-size: 16px;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+  }
+
+  &__author {
+    font-size: 14px;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  &__summary {
+    font-size: small;
+    white-space: nowrap;
+    overflow: hidden; 
+    padding: 8px;
+  }
+}
