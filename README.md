@@ -1,8 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Search Functionality:
 
-## Available Scripts
+Code related to search functioanlity can be found here(https://github.com/bhupendra-nitt/search/blob/master/src/utils/helper.js) 
 
-In the project directory, you can run:
+
+This(https://github.com/bhupendra-nitt/search/blob/master/src/) contains the actual react code which will showcase search page.
+
 
 ### `npm start`
 
