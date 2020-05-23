@@ -2,6 +2,7 @@ import { data } from './data';
 
 export const createFrequency = (list) => {
   let dictionary = {}
+  //Create dictionary of all the words present in the document
   list.forEach((ele, documentIndex) => {
     const str = ele.summary.split(' ');
     str.forEach(element => {

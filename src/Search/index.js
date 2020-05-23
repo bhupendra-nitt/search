@@ -17,8 +17,9 @@ class Search extends React.Component {
   }
 
   handleSelection = (e) => {
-    console.log(e);
-    this.setState({ selectedList: this.state.selectedList.concat(e) })
+    if(!this.state.selectedList.includes(e)) {
+      this.setState({ selectedList: this.state.selectedList.concat(e) })
+    }
   }
 
   handleInput = (input) => {
@@ -55,7 +56,7 @@ class Search extends React.Component {
       </button>
       <div className="search__list">
         {
-          this.state.selectedList.map((ele, index) => {
+          this.state.selectedList.map((ele) => {
           return (
             <Card 
               key={ele.id}
